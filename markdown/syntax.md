@@ -47,7 +47,7 @@ GFM adds syntax highlighting if you request it. In your fenced block, add an opt
     puts markdown.to_html
     ```
 ## Horizontal rules
-You can produce a horizontal rule tag (<hr />) by placing three or more hyphens, asterisks, or underscores on a line by themselves. 
+You can produce a horizontal rule tag `<hr />` by placing three or more hyphens, asterisks, or underscores on a line by themselves. 
 
 
 # Span Elements
@@ -75,5 +75,7 @@ Then, anywhere in the document, you define your link label like this, on a line 
 
     [id]: http://example.com/  "Optional Title Here"
 
+## Emphasis
+Markdown treats asterisks (*) and underscores (_) as indicators of emphasis. Text wrapped with one * or _ will be wrapped with an HTML `<em>` tag; double *’s or _’s will be wrapped with an HTML `<strong>` tag. 
 
 # Miscellaneous
