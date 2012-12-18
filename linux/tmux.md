@@ -9,12 +9,14 @@ tmux是一种终端复用器，tmux是terminal muliplexer的缩写。它能够�
 
 ## 修改配置文件
 在用户的主目录中可以创建一个.tmux.conf文件来配置tmux的一些行为。
+
 1. 创建并编写配置文件    
     #改变命令的前缀,将ctrl-b改为ctrl-a以方便操作
     unbind C-b
     set -g prefix C-a
     #使用类似vi的键模式，以便于屏幕回滚和用类似于vi的操作模式编辑文本
     setw -g mode-keys vi
+
 2. 加载配置文件
     #进入tmux拷贝模式
     ctrl-a + [
