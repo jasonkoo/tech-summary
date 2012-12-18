@@ -9,3 +9,5 @@ persnal technology summary
 3. bird
 1. mchale
 8. parish
+
+#中文支持
