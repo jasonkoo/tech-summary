@@ -11,23 +11,31 @@ tmux是一种终端复用器，tmux是terminal muliplexer的缩写。它能够�
 在用户的主目录中可以创建一个.tmux.conf文件来配置tmux的一些行为。
 
 1. 创建并编写配置文件    
-     \#改变命令的前缀,将ctrl-b改为ctrl-a以方便操作
+     
+     改变命令的前缀,将ctrl-b改为ctrl-a以方便操作
      unbind C-b
      set -g prefix C-a
-     \#使用类似vi的键模式，以便于屏幕回滚和用类似于vi的操作模式编辑文本
+     
+     使用类似vi的键模式，以便于屏幕回滚和用类似于vi的操作模式编辑文本
      setw -g mode-keys vi
 
 2. 加载配置文件
-     \#进入tmux拷贝模式
+     
+     进入tmux拷贝模式     
      ctrl-a + [
-     \#加载配置文件
+     
+     加载配置文件
      ：source-file ~/.tmux.conf
 
 ## 命令
 1. 创建session
+     
      tmux new-session -s name
+
 2. 脱离当前session    
-     ctrl-a + d
+     
+      ctrl-a + d
+     
      //关于按键的按动顺序
      * press and hold ctrl
      * press and release a
@@ -35,16 +43,29 @@ tmux是一种终端复用器，tmux是terminal muliplexer的缩写。它能够�
      * press and release d
 
 3. 重新进入已经创建的session
+     
      tmux a(ttach-session) -t name
+
 4. 杀死某个session
+     
      tmux kill-session -t name
+
 5. 杀死所有session
+     
      tmux kill-server
+
 6. 进入tmux拷贝模式
+     
      ctrl-a [
+
 7. 创建新的窗口
+     
      ctrl-a c
+
 8. 切换到某一窗口
+     
      ctrl-a number(窗口号)
+
 9. 分割窗格
+     
      to be continued ...
