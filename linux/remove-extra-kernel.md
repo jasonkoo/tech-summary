@@ -2,13 +2,17 @@
     
     uname -a
     输出如下：
+    
     Linux jason 3.2.0-38-generic-pae #61-Ubuntu SMP Tue Feb 19 12:39:51 UTC 2013 i686 i686 i386 GNU/Linux
+    
     可以看到系统当前使用的kernel为3.2.0-38-generic
 
 2. 查看系统安装了哪些kernel
     
     dpkg --get-selections | grep linux
+    
     输出如下:
+    
     libselinux1					install
     linux-firmware				install
     linux-generic				install
